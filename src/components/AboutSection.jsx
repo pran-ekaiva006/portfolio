@@ -19,10 +19,11 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-            a curious developer and engineering student who turns ideas 
-            into real-world web apps. From crafting responsive frontends
-             to managing robust backends, I enjoy solving complex problems
-              with clean code and creativity.
+            A curious developer and engineering student turning ideas into real-world 
+            web apps — from sleek frontends to powerful 
+            backends, I love solving problems with clean,
+             creative code.
+
             </p>
 
             <p className="text-muted-foreground">
