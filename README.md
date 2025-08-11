@@ -37,4 +37,4 @@ A fast, modern, and mobile-friendly personal portfolio built using the latest **
 
 ---
 
-## 📁 Folder Structure
+
