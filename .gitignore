@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules/
+
+# Logs and build artifacts
+npm-debug.log
+dist/
+.vite/
