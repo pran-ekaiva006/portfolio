@@ -22,13 +22,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "AI Resume Builder",
     description:
-      "",
+      "AI Resume Builder is a web application that generates professional resumes using AI.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    demoUrl: "https://capable-churros-e51954.netlify.app/",
+    githubUrl: "https://github.com/pran-ekaiva006/AI-resume_builder",
   },
 ];
 
