@@ -7,7 +7,7 @@ const projects = [
     description: "A beautiful landing page app using React and Tailwind.",
     image: "/projects/project1.png",
     tags: ["React", "TailwindCSS", "MongoDB"],
-    demoUrl: "https://real-estate-152f.vercel.app/",
+    demoUrl: "https://real-estate-2-fnb9.onrender.com",
     githubUrl: "https://github.com/pran-ekaiva006/real-estate",
   },
   {
