@@ -3,15 +3,35 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "AI Resume Builder",
+    description:
+      "AI Resume Builder is a web application that generates professional resumes using AI.",
+    image: "/projects/project3.png",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    demoUrl: "https://ai-resume-builder-6-o5vo.onrender.com/",
+    githubUrl: "https://github.com/pran-ekaiva006/AI-resume_builder",
+  },
+  {
+    id: 2,
+    title: "Personal-Finance-Manager",
+    description:
+      "CashFlowX is a comprehensive personal finance management application.",
+    image: "/projects/project3.png",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    demoUrl: "https://personal-finance-manager1.onrender.com/login",
+    githubUrl: "https://github.com/pran-ekaiva006/Personal-Finance-Manager",
+  },
+	{
+    id: 3,
     title: "Real Estate Web Application",
     description: "A beautiful landing page app using React and Tailwind.",
     image: "/projects/project1.png",
     tags: ["React", "TailwindCSS", "MongoDB"],
-    demoUrl: "https://real-estate-152f.vercel.app/",
+    demoUrl: "https://real-estate-2-fnb9.onrender.com/",
     githubUrl: "https://github.com/pran-ekaiva006/real-estate",
   },
   {
-    id: 2,
+    id: 4,
     title: "Sorting Visualizer",
     description:
       "Developed an interactive sorting algorithm showcase, implementing various sorting technique.",
@@ -20,16 +40,7 @@ const projects = [
     demoUrl: "https://sorting-proj-nyfd.vercel.app/",
     githubUrl: "https://github.com/pran-ekaiva006/sorting-project",
   },
-  {
-    id: 3,
-    title: "AI Resume Builder",
-    description:
-      "AI Resume Builder is a web application that generates professional resumes using AI.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    demoUrl: "https://capable-churros-e51954.netlify.app/",
-    githubUrl: "https://github.com/pran-ekaiva006/AI-resume_builder",
-  },
+  
 ];
 
 export const ProjectsSection = () => {
