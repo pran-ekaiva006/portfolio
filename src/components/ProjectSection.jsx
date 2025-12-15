@@ -16,7 +16,7 @@ const projects = [
     title: "Personal-Finance-Manager",
     description:
       "CashFlowX is a comprehensive personal finance management application.",
-    image: "/projects/project3.png",
+    image: "/projects/project4.png",
     tags: ["React", "Node.js", "Express", "MongoDB"],
     demoUrl: "https://personal-finance-manager1.onrender.com/login",
     githubUrl: "https://github.com/pran-ekaiva006/Personal-Finance-Manager",
