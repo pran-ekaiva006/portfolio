@@ -7,7 +7,7 @@ export const Herosection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20"
     >
       <div className="container max-w-4xl mx-auto z-10 flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 space-y-6 text-left animate-fade-up">
+        <div className="flex-1 space-y-6 text-center md:text-left animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Pranjal Verma.
           </h1>
@@ -21,7 +21,7 @@ export const Herosection = () => {
             Passionate about scalable architectures, clean interfaces, and data-driven products.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
             <a href="#projects" className="primary-button">
               View My Work
             </a>
