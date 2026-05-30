@@ -1,118 +1,55 @@
-# Pranjal Verma - Portfolio Website
+<div align="center">
+  <img src="public/banner2.png" alt="Pranjal Verma | Full Stack Developer" width="100%" />
+  
+  <br/>
+  
+  # Hi there, I'm Pranjal Verma 👋
+  
+  **Full Stack Developer | B.Tech ECE, IIIT Bhopal '26**
+  
+  [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-pranjalverma.vercel.app-7C6BF0?style=for-the-badge&logo=vercel)](https://pranjalverma.vercel.app/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/pranjal-verma-74954325a)
+  [![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail)](mailto:vermapranjal912@gmail.com)
+</div>
 
-<p align="center">
-  <img src="/public/banner2.png" alt="Pranjal Verma | Full Stack Developer" width="800">
-</p>
+<br/>
 
-<p align="center">
-  <a href="https://pranjalverma.vercel.app/">
-    <img src="https://img.shields.io/badge/Live%20Site-pranjalverma.vercel.app-blue?style=for-the-badge&logo=vercel&labelColor=000000" alt="Live Website">
-  </a>
-  <img src="https://img.shields.io/github/license/pran-ekaiva006/portfolio?style=for-the-badge&labelColor=000000" alt="License">
-  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&labelColor=000000" alt="React Version">
-  <img src="https://img.shields.io/badge/Vite-7+-646CFF?style=for-the-badge&logo=vite&labelColor=000000" alt="Vite">
-</p>
+## 👨‍💻 About Me
 
-## Overview
+I am an engineering student at **IIIT Bhopal** and a Full Stack Developer who loves building products from zero to one. I enjoy bridging the gap between complex backend logic and clean, intuitive user interfaces.
 
-A modern, highly-optimized portfolio website showcasing my skills, projects, and professional experience as a Full Stack Developer. Built with elite performance and user experience in mind, featuring custom dynamic routing, fully functional forms without a backend, and strict accessibility standards.
+My journey started with competitive programming, but I quickly fell in love with web development because it allowed me to build real things that people can use. Whether it's designing a PostgreSQL schema, writing React components, or deploying an AI integration, I care deeply about the details.
 
-**🌐 Live Demo:** [pranjalverma.vercel.app](https://pranjalverma.vercel.app/)
+## 🚀 Featured Projects
 
-## ✨ Key Features
+Here are a few of my favorite projects that I've built. **[View all case studies on my portfolio](https://pranjalverma.vercel.app/#projects)**.
 
-### 🎨 Design & User Experience
-- **Responsive Architecture** - Meticulously optimized for mobile, tablet, and desktop viewports using Tailwind CSS.
-- **Glassmorphism & Dark Theme** - Sleek aesthetic utilizing backdrop blurs and a curated dark-mode color palette.
-- **Smooth Animations** - Enhanced scroll-based user interactions.
-- **Accessibility First** - 100/100 Lighthouse Accessibility score. Includes semantic HTML and comprehensive ARIA labels.
+### 1. [AI Resume Builder](https://pranjalverma.vercel.app/project/ai-resume-builder)
+**React • Node.js • Express • MongoDB**
+An AI-generated, ATS-optimised resume builder. Features JWT authentication, native client-side PDF export, and real-time dynamic section editing. 
 
-### ⚡ Core Functionality
-- **Dynamic Project Case Studies** - Utilizes `react-router-dom` to render dedicated, deep-linked technical case studies for each featured project.
-- **Serverless Contact Form** - Fully integrated with `Web3Forms` to securely handle user inquiries directly from the client.
-- **Native Resume Hosting** - Bypasses external cloud drives by securely hosting the CV natively on the domain.
-- **Visitor Tracking** - Real-time traffic and demographic tracking powered by Vercel Web Analytics.
+### 2. [BreatheESG](https://pranjalverma.vercel.app/project/breathe-esg)
+**Django • DRF • PostgreSQL • React • Vite**
+An ESG data ingestion platform. Automates the validation of massive SAP exports, utility bills, and corporate travel records to streamline compliance reporting utilizing asynchronous task queues.
 
-## 💻 Technology Stack
+### 3. [CashFlowX](https://pranjalverma.vercel.app/project/cashflowx)
+**React • Node.js • Express • MongoDB**
+A comprehensive personal finance manager featuring automated expense tracking, robust budgeting tools, and highly optimized visual analytics charts driven by complex MongoDB aggregation pipelines.
 
-| Category | Technologies |
-|----------|-------------|
-| **Frontend Framework** | React 18, React Router DOM |
-| **Build Tool** | Vite |
-| **Styling** | Tailwind CSS v3 |
-| **Icons & Assets** | Lucide React |
-| **Forms** | Web3Forms API |
-| **Analytics** | Vercel Analytics |
-| **Deployment** | Vercel Edge Network |
+### 4. [Flight Management PWA](https://pranjalverma.vercel.app/project/flight-management)
+**Next.js 14 • TypeScript • Supabase • Zustand**
+A production-grade Progressive Web App developed for Source Asia featuring offline capabilities, robust authentication, and real-time state synchronization across multiple operators.
 
-## 🚀 Quick Start
+## 💻 Tech Stack
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/pran-ekaiva006/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-## 📁 Project Structure
-
-```text
-portfolio/
-├── public/                 # Static public assets
-│   ├── banner2.png         # Primary hero banner
-│   ├── favicon.svg         # Custom branded PV SVG favicon
-│   └── Pranjal_Verma_Resume.pdf # Native resume file
-├── src/
-│   ├── components/         # Reusable React UI sections (Navbar, Hero, Contact, etc.)
-│   ├── data/               # Static data stores
-│   │   └── projects.js     # Master project registry and case study details
-│   ├── pages/              # Route level components
-│   │   ├── Home.jsx        # Main SPA landing page
-│   │   └── ProjectDetails.jsx # Dynamic case study renderer
-│   ├── App.jsx             # React Router and Vercel Analytics wrapper
-│   ├── index.css           # Global Tailwind CSS imports and utility classes
-│   └── main.jsx            # React DOM entry point
-├── index.html              # HTML template
-├── tailwind.config.js      # Tailwind theme configuration
-└── vite.config.js          # Vite configuration
-```
-
-## 📈 Performance
-
-- **Lighthouse Score:** 100/100 Accessibility & Best Practices.
-- **Loading Speed:** Highly optimized asset delivery via Vercel Edge Network.
-- **Cross-OS Build Support:** Explicit Rollup Linux bindings configured for CI/CD consistency.
-
-## 📬 Contact
-
-**Pranjal Verma** - Full Stack Developer
-
-- 🌐 Website: [pranjalverma.vercel.app](https://pranjalverma.vercel.app/)
-- 💼 GitHub: [@pran-ekaiva006](https://github.com/pran-ekaiva006)
-- 👔 LinkedIn: [in/pranjal-verma-74954325a](https://linkedin.com/in/pranjal-verma-74954325a)
+- **Frontend:** React, Next.js, JavaScript, TypeScript, Tailwind CSS, HTML/CSS
+- **Backend:** Node.js, Express, Django, Python
+- **Databases:** MongoDB, PostgreSQL, Supabase, Turso (SQLite)
+- **Tools:** Git, GitHub, Docker, Figma, Vercel, Render
 
 ---
 
 <p align="center">
-  ⭐ If you like this project, please consider giving it a star!
+  <i>This repository contains the source code for my personal portfolio, built with React 18, Vite, and Tailwind CSS.</i><br/>
+  <b><a href="https://pranjalverma.vercel.app/">Check it out live!</a></b>
 </p>
