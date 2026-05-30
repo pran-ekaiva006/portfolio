@@ -39,9 +39,12 @@ export const Herosection = () => {
           </div>
         </div>
         
-        {/* Placeholder for Profile Photo */}
-        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden bg-secondary border border-border animate-fade-up flex items-center justify-center">
-            <span className="text-4xl text-muted-foreground font-bold">PV</span>
+        <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl animate-fade-up flex items-center justify-center border border-border/50 bg-secondary/20">
+          <img 
+            src="/hero_graphic.png" 
+            alt="3D Abstract Tech Graphic" 
+            className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
+          />
         </div>
       </div>
 
