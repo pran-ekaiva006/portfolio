@@ -11,7 +11,7 @@ export const Herosection = () => {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Pranjal Verma.
           </h1>
-          
+
           <h2 className="text-xl md:text-2xl font-medium text-primary">
             Full Stack Developer &middot; B.Tech ECE, IIIT Bhopal '26
           </h2>
@@ -38,11 +38,11 @@ export const Herosection = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl animate-fade-up flex items-center justify-center border border-border/50 bg-secondary/20">
-          <img 
-            src="/banner2.png" 
-            alt="Hero Banner" 
+          <img
+            src="/public/hero_graphic.png"
+            alt="Hero Banner"
             className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
           />
         </div>
