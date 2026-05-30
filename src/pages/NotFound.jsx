@@ -10,7 +10,7 @@ export const NotFound = () => {
       </p>
       <a
         href="/"
-        className="cosmic-button flex items-center gap-2"
+        className="primary-button flex items-center gap-2"
       >
         <Home size={16} />
         Back to Home

@@ -1,42 +1,52 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export const Herosection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20"
     >
-      <div className="container max-w-4xl mx-auto text-center z-10">
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Pranjal
-            </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Verma
-            </span>
+      <div className="container max-w-4xl mx-auto z-10 flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1 space-y-6 text-left animate-fade-up">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            Pranjal Verma.
           </h1>
+          
+          <h2 className="text-xl md:text-2xl font-medium text-primary">
+            Full Stack Developer &middot; B.Tech ECE, IIIT Bhopal '26
+          </h2>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+          <p className="text-lg text-muted-foreground max-w-xl">
+            I build AI-powered web applications with React, Node.js, and Python.
+            Passionate about scalable architectures, clean interfaces, and data-driven products.
           </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+          <div className="flex flex-wrap gap-4 pt-4">
+            <a href="#projects" className="primary-button">
               View My Work
             </a>
+            <div className="flex items-center gap-4 ml-2">
+              <a href="https://github.com/pran-ekaiva006" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+                <Github size={20} />
+              </a>
+              <a href="https://linkedin.com/in/pranjal-verma-74954325a" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+                <Linkedin size={20} />
+              </a>
+              <a href="mailto:vermapranjal912@gmail.com" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
+        </div>
+        
+        {/* Placeholder for Profile Photo */}
+        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden bg-secondary border border-border animate-fade-up flex items-center justify-center">
+            <span className="text-4xl text-muted-foreground font-bold">PV</span>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-        <ArrowDown className="h-5 w-5 text-primary" />
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-50">
+        <ArrowDown className="h-5 w-5 text-primary animate-bounce" />
       </div>
     </section>
   );
