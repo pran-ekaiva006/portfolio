@@ -14,6 +14,11 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     }
+  },
+  server: {
+    watch: {
+      usePolling: true,
+    }
   }
 })
 
