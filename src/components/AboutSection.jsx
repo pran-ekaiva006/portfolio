@@ -24,7 +24,8 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
               <a
-                href="https://drive.google.com/file/d/1smFfGqdg_a9zEZz1xnasIQCHdPgm_WZm/view"
+                href="/Pranjal_Verma_Resume.pdf"
+                download="Pranjal_Verma_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="px-6 py-2 rounded-md border border-border bg-background text-foreground hover:bg-secondary transition-colors duration-200 inline-block text-center"

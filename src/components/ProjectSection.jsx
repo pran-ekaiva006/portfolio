@@ -1,49 +1,6 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-
-const projects = [
-  {
-    title: "AI Resume Builder",
-    description: "AI-generated, ATS-optimised resumes. JWT auth, PDF export, dynamic section editing. Built as a comprehensive SaaS product.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    demoUrl: "https://ai-resume-builder-6-o5vo.onrender.com/",
-    githubUrl: "https://github.com/pran-ekaiva006/AI-resume_builder",
-  },
-  {
-    title: "BreatheESG",
-    description: "ESG data ingestion platform. Automates validation of SAP exports, utility bills, and corporate travel records to streamline compliance reporting.",
-    tags: ["Django", "DRF", "PostgreSQL", "React", "Vite"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/pran-ekaiva006/Breathe-ESG",
-  },
-  {
-    title: "CashFlowX",
-    description: "Comprehensive personal finance manager with automated expense tracking, budgeting, and detailed visual analytics.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
-    demoUrl: "https://personal-finance-manager1.onrender.com/login",
-    githubUrl: "https://github.com/pran-ekaiva006/Personal-Finance-Manager",
-  },
-  {
-    title: "Flight Management App",
-    description: "Production-grade PWA developed for Source Asia. Features robust authentication and real-time state synchronization.",
-    tags: ["Next.js 14", "TypeScript", "Supabase", "Zustand"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/pran-ekaiva006/flight-management-app",
-  },
-  {
-    title: "Es-Magico CRM",
-    description: "Single-screen CRM dashboard for streamlined lead management. Implements optimistic UI updates and edge database.",
-    tags: ["React 19", "Express", "Turso SQLite"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/pran-ekaiva006/-Es-Magico",
-  },
-  {
-    title: "Notes Backend",
-    description: "Multi-user notes API developed for Fi Money. Supports secure sharing, pinning, full-text search, and pagination.",
-    tags: ["Node.js", "Express", "MongoDB Atlas"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/pran-ekaiva006/Notes-App",
-  },
-];
+import { Link } from "react-router-dom";
+import { projectsData } from "../data/projects";
 
 export const ProjectsSection = () => {
   return (
@@ -54,22 +11,24 @@ export const ProjectsSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, key) => (
+          {projectsData.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-background border border-border rounded-lg p-6 flex flex-col h-full hover:border-primary/50 transition-colors"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
+                <Link to={`/project/${project.id}`} className="hover:underline">
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                </Link>
                 <div className="flex space-x-3 text-muted-foreground">
                   {project.demoUrl !== "#" && (
-                    <a href={project.demoUrl} target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                    <a href={project.demoUrl} target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label={`Live Demo of ${project.title}`}>
                       <ExternalLink size={20} />
                     </a>
                   )}
-                  <a href={project.githubUrl} target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
+                  <a href={project.githubUrl} target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label={`GitHub Repo of ${project.title}`}>
                     <Github size={20} />
                   </a>
                 </div>
@@ -79,15 +38,29 @@ export const ProjectsSection = () => {
                 {project.description}
               </p>
               
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-1 text-xs font-medium border border-border rounded-md bg-secondary text-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mt-auto pt-4 border-t border-border/50">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.slice(0, 3).map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2 py-1 text-xs font-medium border border-border rounded-md bg-secondary text-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                  {project.tags.length > 3 && (
+                    <span className="px-2 py-1 text-xs font-medium border border-border rounded-md bg-secondary text-foreground">
+                      +{project.tags.length - 3}
+                    </span>
+                  )}
+                </div>
+                
+                <Link 
+                  to={`/project/${project.id}`} 
+                  className="text-sm font-semibold text-primary hover:text-primary/80 flex items-center gap-1 transition-colors whitespace-nowrap"
+                >
+                  Read Case Study <ArrowRight size={14} />
+                </Link>
               </div>
             </div>
           ))}

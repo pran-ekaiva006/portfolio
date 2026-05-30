@@ -119,13 +119,13 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/pranjal-verma-74954325a/" target="_blank">
+                <a href="https://www.linkedin.com/in/pranjal-verma-74954325a/" aria-label="LinkedIn Profile" target="_blank" rel="noreferrer">
                   <Linkedin />
                 </a>
-                <a href="https://x.com/shockworld006" target="_blank">
+                <a href="https://x.com/shockworld006" aria-label="Twitter Profile" target="_blank" rel="noreferrer">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a href="#" aria-label="Instagram Profile" target="_blank" rel="noreferrer">
                   <Instagram />
                 </a>
                

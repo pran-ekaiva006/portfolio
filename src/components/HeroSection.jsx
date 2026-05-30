@@ -26,13 +26,13 @@ export const Herosection = () => {
               View My Work
             </a>
             <div className="flex items-center gap-4 ml-2">
-              <a href="https://github.com/pran-ekaiva006" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+              <a href="https://github.com/pran-ekaiva006" aria-label="GitHub Profile" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/in/pranjal-verma-74954325a" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+              <a href="https://linkedin.com/in/pranjal-verma-74954325a" aria-label="LinkedIn Profile" target="_blank" rel="noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:vermapranjal912@gmail.com" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
+              <a href="mailto:vermapranjal912@gmail.com" aria-label="Send an Email" className="p-2 text-muted-foreground hover:text-foreground transition-colors bg-secondary rounded-full">
                 <Mail size={20} />
               </a>
             </div>
