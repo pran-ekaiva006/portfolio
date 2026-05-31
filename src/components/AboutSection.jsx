@@ -15,7 +15,7 @@ export const AboutSection = () => {
               I enjoy bridging the gap between complex backend logic and clean, intuitive user interfaces.
             </p>
             <p>
-              My journey started with competitive programming, but I quickly fell in love with web development because it allowed me to build real things that people can use. 
+              My journey started with competitive programming, but I quickly fell in love with web development because it allowed me to build real things that people can use.
               Whether it's designing a PostgreSQL schema, writing React components, or deploying an AI integration, I care deeply about the details.
             </p>
 
@@ -45,13 +45,13 @@ export const AboutSection = () => {
                 <p className="text-sm text-muted-foreground">Public Repositories</p>
               </div>
             </div>
-            
+
             <div className="p-6 rounded-lg bg-background border border-border flex items-center gap-4">
               <div className="p-3 rounded-md bg-secondary">
                 <Code2 className="h-6 w-6 text-primary" />
               </div>
               <div className="text-left">
-                <h4 className="font-bold text-xl text-foreground">6+</h4>
+                <h4 className="font-bold text-xl text-foreground">10+</h4>
                 <p className="text-sm text-muted-foreground">Deployed Projects</p>
               </div>
             </div>
