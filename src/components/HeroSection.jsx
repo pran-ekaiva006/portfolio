@@ -42,8 +42,8 @@ export const Herosection = () => {
 
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl animate-fade-up flex items-center justify-center border border-border/50 bg-secondary/20">
           <img
-            src="/hero_graphic.png"
-            alt="Hero Banner"
+            src="/pranjal_hero.jpg"
+            alt="Pranjal Verma"
             className="w-full h-full object-cover opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-500"
           />
         </div>
