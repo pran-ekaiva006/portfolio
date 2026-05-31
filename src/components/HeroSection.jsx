@@ -17,8 +17,9 @@ export const Herosection = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-xl">
-            I build AI-powered web applications with React, Node.js, and Python.
-            Passionate about scalable architectures, clean interfaces, and data-driven products.
+            Backend-focused Full Stack Developer specializing in scalable APIs, database design,
+            and AI-powered web applications. Passionate about building reliable software solutions
+            that combine robust engineering with exceptional user experiences
           </p>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
