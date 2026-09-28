@@ -27,3 +27,7 @@ dist-ssr/
 *.sln
 *.sw?
 node_modules
+
+# Brag output directories
+.brag-output
+brag-output*
